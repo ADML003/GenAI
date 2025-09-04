@@ -1,0 +1,9 @@
+Topic-wise Weightage Analysis and Priority Matrix
+High-Priority Topics (60% of Questions)
+IP Addressing and Subnetting remains the most frequently tested area, appearing in almost every GATE paper. This topic typically carries 2 marks and includes IPv4 addressing, CIDR notation, subnet calculations, and supernetting. The questions often involve numerical problems requiring quick calculation skills.
+TCP/UDP and Transport Layer protocols constitute another major segment. Topics include three-way handshake, flow control mechanisms, congestion control algorithms, and the fundamental differences between connection-oriented and connectionless protocols. Recent years have seen increased emphasis on TCP congestion control algorithms like slow start, congestion avoidance, and fast recovery.
+Data Link Layer and Medium Access Control (MAC) protocols are consistently tested. Key areas include framing techniques, error detection methods (CRC, Hamming codes), Ethernet protocols, and collision detection mechanisms like CSMA/CD. These topics often appear as both theoretical and numerical questions.
+Medium-Priority Topics (30% of Questions)
+Routing Protocols including distance vector and link state algorithms are regularly featured. The Bellman-Ford equation and Dijkstra’s algorithm applications are particularly important. Questions often involve calculating shortest paths in network topologies and understanding routing table updates.
+Error Detection and Correction techniques encompass parity checking, cyclic redundancy check (CRC), and Hamming codes. These topics frequently appear as numerical problems requiring step-by-step calculations.
+OSI and TCP/IP Protocol Stacks serve as foundational knowledge. While questions are typically straightforward, understanding layer functionalities, data encapsulation, and protocol mapping between models is essential.
