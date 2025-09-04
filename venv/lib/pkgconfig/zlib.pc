@@ -1,0 +1,13 @@
+prefix=/Users/ADML/Desktop/ML/GenAI/venv
+exec_prefix=/Users/ADML/Desktop/ML/GenAI/venv
+libdir=/Users/ADML/Desktop/ML/GenAI/venv/lib
+sharedlibdir=/Users/ADML/Desktop/ML/GenAI/venv/lib
+includedir=/Users/ADML/Desktop/ML/GenAI/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
