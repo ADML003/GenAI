@@ -85,4 +85,10 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+# Vector Databases (can be large)
+chroma_db/
+faiss_index/
+*.faiss
+*.pkl
+
 AcknowledgementReceipt (10).pdf
