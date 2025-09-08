@@ -8,3 +8,12 @@ arxiv
 pymupdf
 wikipedia 
 langchain-text-splitters
+chromadb
+langchain-openai
+langchain-huggingface
+langchain-ollama
+sentence_transformers
+langchain_huggingface
+
+#pip install pip-tools
+#pip-sync requirements.txt
