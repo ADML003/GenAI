@@ -16,12 +16,13 @@ sentence_transformers
 langchain_huggingface
 faiss-cpu
 langchain_chroma
-
+langchain_groq
 streamlit
-
-
-
-
-
+langchain_core
+fastapi
+uvicorn
+langserve 
+sse_starlette
+pydantic==2.9.2
 #pip install pip-tools
 #pip-sync requirements.txt
