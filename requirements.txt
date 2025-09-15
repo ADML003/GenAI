@@ -24,5 +24,6 @@ uvicorn
 langserve 
 sse_starlette
 pydantic==2.9.2
+duckduckgo-search
 #pip install pip-tools
 #pip-sync requirements.txt

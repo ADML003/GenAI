@@ -39,10 +39,11 @@ if prompt:=st.chat_input(placeholder="What is machine learning?"):
     st.session_state.messages.append({"role":"user","content":prompt})
     st.chat_message("user").write(prompt)
 
-    llm=ChatGroq(groq_api_key=api_key,model_name="Llama3-8b-8192",streaming=True)
+    llm=ChatGroq(groq_api_key=api_key,model_name="llama-3.1-8b-instant",streaming=True)
     tools=[search,arxiv,wiki]
 
     search_agent=initialize_agent(tools,llm,agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,handling_parsing_errors=True)
+    #zero_shot_react_description is used when we have tools with descriptions
 
     with st.chat_message("assistant"):
         st_cb=StreamlitCallbackHandler(st.container(),expand_new_thoughts=False)
