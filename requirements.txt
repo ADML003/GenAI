@@ -27,5 +27,9 @@ pydantic==2.9.2
 duckduckgo-search
 SQLAlchemy
 mysql-connector-python
+validators==0.28.1
+youtube_transcript_api
+unstructured
+pytube
 #pip install pip-tools
 #pip-sync requirements.txt

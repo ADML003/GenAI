@@ -3,23 +3,31 @@ from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader,UnstructuredURLLoader
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-## sstreamlit APP
+# Get the API key from environment
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+## streamlit APP
 st.set_page_config(page_title="LangChain: Summarize Text From YT or Website", page_icon="🦜")
 st.title("🦜 LangChain: Summarize Text From YT or Website")
 st.subheader('Summarize URL')
 
-
-
 ## Get the Groq API Key and url(YT or website)to be summarized
 with st.sidebar:
-    groq_api_key=st.text_input("Groq API Key",value="",type="password")
-
+    if GROQ_API_KEY:
+        st.success("Groq API Key found and loaded from .env file")
+        groq_api_key = GROQ_API_KEY
+    else:
+        groq_api_key = st.text_input("Enter your Groq API Key:", type="password")
+    
 generic_url=st.text_input("URL",label_visibility="collapsed")
 
-## Gemma Model USsing Groq API
-llm =ChatGroq(model="Gemma-7b-It", groq_api_key=groq_api_key)
+## Gemma Model Using Groq API
+llm =ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
 
 prompt_template="""
 Provide a summary of the following content in 300 words:
