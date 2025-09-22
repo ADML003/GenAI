@@ -31,5 +31,6 @@ validators==0.28.1
 youtube_transcript_api
 unstructured
 pytube
+openai
 #pip install pip-tools
 #pip-sync requirements.txt
