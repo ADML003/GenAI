@@ -32,5 +32,6 @@ youtube_transcript_api
 unstructured
 pytube
 openai
+langchain_nvidia_ai_endpoints
 #pip install pip-tools
 #pip-sync requirements.txt

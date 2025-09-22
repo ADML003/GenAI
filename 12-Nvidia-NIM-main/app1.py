@@ -13,9 +13,9 @@ from langchain_community.document_loaders import PyPDFDirectoryLoader
 import time
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(dotenv_path="../.env") ## Load the env file
 
-## load the Groq API key
+## load the Nvidia  API key
 os.environ['NVIDIA_API_KEY']=os.getenv("NVIDIA_API_KEY")
 
 def vector_embedding():
@@ -32,7 +32,7 @@ def vector_embedding():
 
 
 st.title("Nvidia NIM Demo")
-llm = ChatNVIDIA(model="meta/llama3-70b-instruct")
+llm = ChatNVIDIA(model="nvidia/llama-3.1-nemotron-70b-instruct")  # ✅ Working alternative model
 
 
 prompt=ChatPromptTemplate.from_template(
@@ -48,7 +48,7 @@ Questions:{input}
 )
 
 
-prompt1=st.text_input("Enter Your Question From Doduments")
+prompt1=st.text_input("Enter Your Question From Documents")
 
 
 if st.button("Documents Embedding"):
