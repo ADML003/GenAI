@@ -42,4 +42,4 @@ blog_writer=Agent(
     allow_delegation=False
 
 
-)
+)# the agents are designed to carry out sequential tasks such that they are synced via their inputs and outputs
