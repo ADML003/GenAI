@@ -44,3 +44,4 @@ blog_writer=Agent(
 
 )# the agents are designed to carry out sequential tasks such that they are synced via their inputs and outputs
 # by default the agents work in a sequential manner
+# crew ai allows for more complex workflows by enabling parallel task execution and agent collaboration
