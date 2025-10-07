@@ -7,7 +7,7 @@ from langchain.agents import initialize_agent,AgentType  # Agent framework for t
 from langchain.callbacks import StreamlitCallbackHandler  # Real-time display of agent thoughts
 import os
 from dotenv import load_dotenv  # For loading environment variables
-
+# this file deals wiht the frontend logic of the app
 ## Creating Search Tools with API Wrappers
 # ArXiv tool for research paper searches
 arxiv_wrapper=ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200)  # Limit to 1 result, 200 chars
